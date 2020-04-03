@@ -2,7 +2,6 @@
 
 #project Setting
  1) 가상환경을 anaconda 폴더의 python.exe로 잡으니 manage.py로 서버 돌릴때 sqlite가 import안된다는 오류가 있었다.
- 2) 바보같이 첫 노트북 사고부터 user이름을 한국어로 해서 프로젝트만들때마다 오류파티다 ㅎㅎㅎ
  3) 영어로된 user에 python 새로 깔고 이걸로 가상환경 다시 만들었다.
  4) sqlite 오류는 안뜨는데 window hostname이 한국어라 utf-8 변환안된다고 오류..
  5) 이미 가상환경 5개 만들어서 슬펐다 ..
@@ -33,3 +32,16 @@
  6) shell-> Django에서 동작하는 모든 명령 시험 가능 
  7) 모델에 `__str__()` 추가: 객체표현 위해
  8) polls/admin.py에 Question import하고 `admin.site.register(Question)` 하면 관리사이트에서 poll app변경 가능
+ 
+ #part3
+ 1) 뷰: 장고 어플리케이션이 일반적으로 특정 기능과 템플릿을 제공하는 웹페이지의 한 종류   
+ -URLconf는 URL패턴을 뷰에 연결   
+ -뷰에 기능 메소드 **detail, results, vote**를 추가             
+ -path() 호출을 추가하여 새로운 뷰를 polls.urls모듈로 연결
+ 
+ 2) 뷰의기능                                                                                                
+ -요청된 페이지의 내용이 담긴 HttpResponse객체를 반환                                                                                                       
+ -Http404의 예외처리  
+ -templates: 장고가 어떻게 템플릿을 불러오고 렌더링 할 것인지 기술
+ 3) **render()**:request, 템플릿이름, context 사전형 객체를 인수로 받는다.                   
+ -> loader, HttpResponse 임포트 할 필요 없음
