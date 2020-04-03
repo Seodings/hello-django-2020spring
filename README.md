@@ -45,3 +45,4 @@
  -templates: 장고가 어떻게 템플릿을 불러오고 렌더링 할 것인지 기술
  3) **render()**:request, 템플릿이름, context 사전형 객체를 인수로 받는다.                   
  -> loader, HttpResponse 임포트 할 필요 없음
+ 4) `get_object_or_404()`: 객체가 존재하지 않을 경우 Http404 에러 발생
