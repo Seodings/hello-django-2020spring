@@ -45,5 +45,6 @@
  -templates: 장고가 어떻게 템플릿을 불러오고 렌더링 할 것인지 기술
  3) **render()**:request, 템플릿이름, context 사전형 객체를 인수로 받는다.                   
  -> loader, HttpResponse 임포트 할 필요 없음
- 4) `get_object_or_404()`: 객체가 존재하지 않을 경우 Http404 에러 발생
- 5) `{% url %}` template 태그를 사용하여 url설정에 정의된 특정한 URL 경로들의 의존성 제거 가능
+ 4) `get_object_or_404()`: 객체가 존재하지 않을 경우 Http404 에러 발생   
+ 5) `{% url %}` template 태그를 사용하여 url설정에 정의된 특정한 URL 경로들의 의존성 제거 가능    
+ 6) polls/urls.py에 **app_name**을 추가하여 애플리케이션의 이름공간 설정가능
