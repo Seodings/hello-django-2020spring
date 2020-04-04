@@ -53,3 +53,8 @@
  1) `request.POST`: 키로 전송된 자료에 접근할 수 있도록 한다. 항상 문자열로 반환
  2) HttpResponseRedirect 생성자 안의 `reverse()`: '/polls/3/results/'와 같은 문자열을 반환, 뷰 함수에서 URL을 하드코딩하지 않도록 도와준다.
  3) request는 HttpRequest 객체이다.
+ 4) 제너릭 뷰 사용하기: 적은 코드가 더 좋다.   
+ -URLconf 수정   
+ -views수정   
+ -`ListView`: 객체 목록 표시   
+ -`DetailView`: 특정 객체 유형에 대한 세부 정보 페이지 표시
