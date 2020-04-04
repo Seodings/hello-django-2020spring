@@ -46,3 +46,4 @@
  3) **render()**:request, 템플릿이름, context 사전형 객체를 인수로 받는다.                   
  -> loader, HttpResponse 임포트 할 필요 없음
  4) `get_object_or_404()`: 객체가 존재하지 않을 경우 Http404 에러 발생
+ 5) `{% url %}` template 태그를 사용하여 url설정에 정의된 특정한 URL 경로들의 의존성 제거 가능
