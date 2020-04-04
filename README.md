@@ -48,3 +48,8 @@
  4) `get_object_or_404()`: 객체가 존재하지 않을 경우 Http404 에러 발생   
  5) `{% url %}` template 태그를 사용하여 url설정에 정의된 특정한 URL 경로들의 의존성 제거 가능    
  6) polls/urls.py에 **app_name**을 추가하여 애플리케이션의 이름공간 설정가능
+ 
+ #part4
+ 1) `request.POST`: 키로 전송된 자료에 접근할 수 있도록 한다. 항상 문자열로 반환
+ 2) HttpResponseRedirect 생성자 안의 `reverse()`: '/polls/3/results/'와 같은 문자열을 반환, 뷰 함수에서 URL을 하드코딩하지 않도록 도와준다.
+ 3) request는 HttpRequest 객체이다.
