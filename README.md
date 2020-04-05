@@ -1,6 +1,6 @@
 ##### hello-django-2020spring
 
-#project Setting
+# project Setting
  1) 가상환경을 anaconda 폴더의 python.exe로 잡으니 manage.py로 서버 돌릴때 sqlite가 import안된다는 오류가 있었다.
  3) 영어로된 user에 python 새로 깔고 이걸로 가상환경 다시 만들었다.
  4) sqlite 오류는 안뜨는데 window hostname이 한국어라 utf-8 변환안된다고 오류..
@@ -9,7 +9,7 @@
     wmic 커맨드로 hostname 영어로 바꿔주니 드디어 성.공!
  7) 느낀점-> 무 족  권. 폴더명과 호스트네임은 영어로 ..
  
- #part 1
+ # part 1
  1. 뷰를 호출하려면 이와 연결된 URL필요 -> 이를 위해 URLconf가 사용된다.
  2. URLconf 생성하려면 urls.py파일 생성
  3. `path('polls/', include('polls.urls')),` 
@@ -18,7 +18,7 @@
  - **route**: URL패턴을 가진 문자열
  - **view**: HttpRequest 객체를 첫번째 인수로한 특정 view함수 호출
  
- #part2
+ # part2
  1) **모델**: 부가적인 메타데이터를 가진 데이터베이스의 구조
  - 데이터의 필수적인 필드들과 동작을 포함
  - 데이터베이스의 각 필드는 **Field** 클래스의 인스턴스로서 표현된다.
@@ -33,7 +33,7 @@
  7) 모델에 `__str__()` 추가: 객체표현 위해
  8) polls/admin.py에 Question import하고 `admin.site.register(Question)` 하면 관리사이트에서 poll app변경 가능
  
- #part3
+ # part3
  1) 뷰: 장고 어플리케이션이 일반적으로 특정 기능과 템플릿을 제공하는 웹페이지의 한 종류   
  -URLconf는 URL패턴을 뷰에 연결   
  -뷰에 기능 메소드 **detail, results, vote**를 추가             
@@ -49,7 +49,7 @@
  5) `{% url %}` template 태그를 사용하여 url설정에 정의된 특정한 URL 경로들의 의존성 제거 가능    
  6) polls/urls.py에 **app_name**을 추가하여 애플리케이션의 이름공간 설정가능
  
- #part4
+ # part4
  1) `request.POST`: 키로 전송된 자료에 접근할 수 있도록 한다. 항상 문자열로 반환
  2) HttpResponseRedirect 생성자 안의 `reverse()`: '/polls/3/results/'와 같은 문자열을 반환, 뷰 함수에서 URL을 하드코딩하지 않도록 도와준다.
  3) request는 HttpRequest 객체이다.
